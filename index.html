@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Encriptador de texto</title>
+</head>
+
+<body>
+  <header>
+    <img src="Images/Logo1x.png" alt="logo-Alura">
+  </header>
+  <div class="conatiner">
+    <div class="encripta-texto">
+      <textarea class="text" name="text" id="text" cols="30" rows="10" placeholder="Ingresa el texto aquí"></textarea>
+
+      <div>
+        <p class="Instruccion">Solo letras minúsculas y sin acentos</p>
+      </div>
+      <div class="botones">
+        <input class="btn-encriptar" type="button" value="Encriptar" onclick="encriptar()">
+        <input class="btn-desencriptar" type="button" value="Desencriptar" onclick="desencriptar()">
+      </div>
+    </div>
+
+    <div class="desencripta">
+      <div class="muneco">
+        <img src="Images/Muñeco1x.png" alt="muneco" id="muneco">
+      </div>
+      <div class="mensaje-encriptado">
+        <h2 class="mensajeTexto" id="mensajeTexto">Ningún mensaje fue encontrado</h2>
+        <p id="parrafo">Ingresa el texto de deseas encriptar o desencriptar</p>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+      </div>
+      <input type="button" value="Copiar Texto" class="btnCopiar" id="btnCopiar" onclick="copiar()">
+    </div>
+  </div>
+  <footer>
+    <ul>
+      <li>
+        <a class="github" href="https://github.com/venayVq"><img src="Images/Github_logo_PNG7.png" width="45px" height="40px" alt=""
+            srcset=""></a>
+      </li>
+      <li>
+        <a class="linked" href="https://www.linkedin.com/in/andr%C3%A9s-felipe-v%C3%A9lez-quiceno-2ab142266/"><img
+            src="Images/LI-In-Bug.png"  width="45px" height="40px" alt="" srcset=""></a>
+      </li>
+    </ul>
+  </footer>
+
+</body>
+
+<script src="index.js" type="text/javascript"></script>
+
+</html>
